@@ -1967,15 +1967,15 @@ bool Mob::SpellEffect(Mob* caster, uint16 spell_id, int buffslot, int caster_lev
 				if (IsClient())
 				{
 					if (GetPet())
-					{
-						// if (!GetPet()->IsCharmedPet())
-						// {
-							// if (spell_id == SPELL_CALL_OF_THE_HERO)
-							// {
-								// DepopPet();
-							// }
-						// }
-						else
+/*					{
+						if (!GetPet()->IsCharmedPet())
+						{
+							if (spell_id == SPELL_CALL_OF_THE_HERO)
+							{
+								DepopPet();
+							}
+						}
+*/						else
 						{
 							FadePetCharmBuff();
 						}
